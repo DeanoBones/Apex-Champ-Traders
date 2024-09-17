@@ -2,12 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Apex Champ Traders</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #16213E;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?finance,stock') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 3rem;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content h2 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .services, .how-it-works {
+            background-color: #e0e0e0;
+            padding: 2rem;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .services h2, .how-it-works h2 {
+            text-align: center;
+        }
+        footer {
+            background-color: #16213E;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #1a1a2e;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0f3460;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Apex Champ Traders</h1>
-    <p>We are a trading company helping people invest and grow their wealth.</p>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Apex Champ Traders</h1>
+        <p>Your Trusted Partner in Trading and Investments</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Invest with Confidence</h2>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content" id="about">
+        <h2>About Apex Champ Traders</h2>
+        <p>At Apex Champ Traders, we specialize in delivering high returns on investments through strategic trading. Our team of experts works tirelessly to maximize your investment potential in the fast-paced world of stock trading, forex, and cryptocurrency. With years of experience and a commitment to transparency, we make trading accessible for everyone.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="content services" id="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of trading services tailored to suit the needs of both novice and experienced investors:</p>
+        <ul>
+            <li>Portfolio Management</li>
+            <li>Forex Trading</li>
+            <li>Cryptocurrency Trading</li>
+            <li>Comprehensive Risk Management</li>
+        </ul>
+    </div>
+
+    <!-- How It Works Section -->
+    <div class="content how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Investing with Apex Champ Traders is simple and transparent:</p>
+        <ol>
+            <li>Sign up and create an account.</li>
+            <li>Choose your preferred investment package.</li>
+            <li>Transfer your funds securely.</li>
+            <li>We trade on your behalf while you track your profits in real-time.</li>
+        </ol>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="content" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Apex Champ Traders. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
